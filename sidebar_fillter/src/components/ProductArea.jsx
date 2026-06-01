@@ -22,15 +22,16 @@ const ProductArea = ({ fillterProducts }) => {
             <li key={index}>{p.title} <button onClick={() => {popupHandler(p)}} className='bg-blue-500 text-white px-2 py-2 rounded mb-4 cursor-pointer'>View more</button></li>
             ))}
         </ul>
-        </div>
+        </div >
        {open_popup && selectedProduct &&(
-        <div>
+        <div className='fixed inset-0 bg-black/50 flex items-center justify-center'>
+          <div className='bg-white p-5 rounded'> 
           <h1 className='text-xl font-bold mb-2'>{selectedProduct.title}</h1>
           <p>${selectedProduct.price}</p>
           <p>Brand: {selectedProduct.brand}</p>
           <p>{selectedProduct.description}</p>
           <button onClick={()=>setopen_popup(false)} className='bg-red-500 text-white px-2 py-2 rounded cursor-pointer'>Close</button>
-           
+           </div>
        </div>
        )}
 
