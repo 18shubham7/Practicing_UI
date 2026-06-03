@@ -7,13 +7,13 @@ function App() {
 
  const  product=[
        "iPhone 15",
-    "Samsung Galaxy",
-    "MacBook Air",
-    "Nike Shoes",
-    "Puma T Shirt",
-    "Bluetooth Speaker",
-    "Gaming Mouse",
-    "Laptop Bag",
+      "Samsung Galaxy",
+      "MacBook Air",
+      "Nike Shoes",
+      "Puma T Shirt",
+      "Bluetooth Speaker",
+      "Gaming Mouse",
+      "Laptop Bag",
   ]
 
   const fillter_product = product.filter((items)=>
